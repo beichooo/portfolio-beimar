@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beymar Chipana Lucana | Desarrollo de Software y Marketing Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <!-- Contenedor Principal -->
+    <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+
+        <!-- Header y Navegación -->
+        <header class="flex justify-between items-center py-8 sticky top-0 bg-slate-900/80 backdrop-blur-sm z-10">
+            <div class="text-2xl font-bold text-white">
+                <a href="#">BCL</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-lg">
+                <a href="#projects" class="hover:text-cyan-400 transition-colors duration-300">Proyectos Tech</a>
+                <a href="#case-studies" class="hover:text-cyan-400 transition-colors duration-300">Experiencia Marketing</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors duration-300">Habilidades</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors duration-300">Contacto</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Sección Principal (Hero) -->
+            <section id="home" class="text-center py-20 md:py-32">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
+                    Beymar Chipana Lucana
+                </h1>
+                <p class="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-cyan-400 to-teal-500 text-gradient mb-8">
+                    Desarrollador de Soluciones Digitales y Estratega de Marketing
+                </p>
+                <p class="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10">
+                    Construyo soluciones de software innovadoras y aplico mi conocimiento técnico para crear estrategias de marketing de alto impacto. Especialista en desarrollo web, automatización con IA y producción de contenido digital.
+                </p>
+                <a href="#contact" class="bg-cyan-500 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-cyan-400 transition-transform duration-300 inline-block transform hover:scale-105">
+                    Hablemos
+                </a>
+            </section>
+
+            <!-- Proyectos de Desarrollo e IA -->
+            <section id="projects" class="py-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Proyectos de Desarrollo e IA</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Proyecto PASY -->
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-white mb-2">PASY - Plataforma de Adopción de Mascotas</h3>
+                            <p class="text-cyan-400 font-medium mb-4">Desarrollo Full-Stack con Python (Django)</p>
+                            <p class="text-slate-400 leading-relaxed mb-6">
+                                Lideré el desarrollo del frontend y colaboré activamente en el backend para crear una plataforma web completa. Diseñé e implementé la interfaz de usuario con HTML y CSS, asegurando una experiencia intuitiva. El proyecto, presentado como una iniciativa de tecnología cívica, demuestra mi capacidad para llevar un producto desde la concepción hasta el despliegue.
+                            </p>
+                            <div class="mt-auto flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm font-medium text-slate-500">Tecnologías:</span>
+                                    <!-- Python Icon -->
+                                    <svg class="w-8 h-8 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 2.33c-2.26.1-4.22.99-5.73 2.49-.63.63-1.15 1.36-1.58 2.16-.06.12-.1.25-.13.38-.28 1.16-.3 2.37-.02 3.52.41 1.66 1.41 3.1 2.8 4.14 1.1.82 2.4 1.35 3.77 1.61.13.02.26.04.38.07.4.08.79.14 1.18.17 1.18.1 2.38-.04 3.52-.42 1.67-.57 3.12-1.57 4.14-2.88 1.25-1.63 1.88-3.6 1.83-5.58-.08-3.08-1.63-5.8-4.08-7.39-1.22-.8-2.6-1.28-4.04-1.42-.1-.01-.2 0-.3-.01Zm-4.8 4.79c.53-.53 1.13-.94 1.79-1.25.9-.42 1.9-.62 2.92-.58.78.03 1.55.2 2.29.5.95.38 1.82.95 2.53 1.66.52.52.95 1.1 1.28 1.74.45.86.7 1.8.7 2.76 0 .78-.13 1.55-.4 2.29-.39.98-1 1.86-1.74 2.6-.54.55-1.16 1-1.82 1.35-.88.42-1.84.64-2.8.6-.78-.03-1.55-.2-2.29-.5-.95-.38-1.82-.95-2.53-1.66-.52-.52-.95-1.1-1.28-1.74-.45-.86-.7-1.8-.7-2.76 0-.8.14-1.58.42-2.32.38-.97 1-1.85 1.72-2.58Z M9.58 21.67c2.26-.1 4.22-.99 5.73-2.49.63-.63 1.15-1.36 1.58-2.16.06-.12.1-.25.13-.38.28-1.16.3-2.37.02-3.52-.41-1.66-1.41-3.1-2.8-4.14-1.1-.82-2.4-1.35-3.77-1.61-.13-.02-.26-.04-.38-.07-.4-.08-.79-.14-1.18-.17-1.18-.1-2.38.04-3.52.42-1.67.57-3.12-1.57-4.14-2.88-1.25-1.63-1.88-3.6-1.83-5.58.08-3.08 1.63-5.8 4.08-7.39 1.22-.8 2.6-1.28 4.04-1.42.1-.01.2 0 .3-.01Zm4.8-4.79c-.53.53-1.13.94-1.79 1.25-.9.42-1.9.62-2.92.58-.78-.03-1.55-.2-2.29-.5-.95-.38-1.82-.95-2.53-1.66-.52-.52-.95-1.1-1.28-1.74-.45-.86-.7-1.8-.7-2.76 0-.78.13-1.55.4-2.29.39-.98 1-1.86 1.74-2.6.54-.55 1.16-1 1.82-1.35.88-.42 1.84-.64 2.8-.6.78.03 1.55.2 2.29.5.95.38 1.82.95 2.53 1.66.52.52.95 1.1 1.28 1.74.45.86.7 1.8.7 2.76 0 .8-.14 1.58-.42 2.32-.38-.97 1-1.85 1.72-2.58Z" /></svg>
+                                    <!-- Django Icon -->
+                                    <svg class="w-7 h-7 text-[#092E20]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M1.61 22.39h4.44V6.91H1.61v15.48ZM22.39 12.02c0 5.48-3.92 8.3-9.52 8.3a12.83 12.83 0 0 1-4.04-.64v-3.79c1.11.43 2.43.64 3.96.64 3.63 0 5.37-1.5 5.37-4.51V1.61H22.4v10.41Z" /></svg>
+                                </div>
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/yourusername/pasy-project" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors duration-300">
+                                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">Ver código</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Proyecto Generador de Descripciones -->
+
+                    <!-- <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-white mb-2">Generador de Descripciones para Redes Sociales</h3>
+                            <p class="text-cyan-400 font-medium mb-4">Herramienta Web con IA Generativa</p>
+                            <p class="text-slate-400 leading-relaxed mb-6">
+                                Creé una aplicación web que genera automáticamente descripciones, hashtags y copys optimizados para videos. Ingresando una transcripción, la herramienta usa un LLM para producir contenido listo para publicar en TikTok e Instagram, agilizando drásticamente el flujo de trabajo de creadores de contenido.
+                            </p>
+                             <div class="mt-auto flex items-center space-x-4">
+                                <span class="text-sm font-medium text-slate-500">Tecnologías:</span>
+
+                                <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2Zm4.293 6.293-1.66 1.092a.5.5 0 0 1-.663-.092L12 6.5l-1.97 2.793a.5.5 0 0 1-.663.092l-1.66-1.092L12 3l4.293 5.293ZM7.5 17a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-2Zm9-5.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-2Z"/></svg>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                     <!-- Proyecto WhatsApp Bot -->
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg flex flex-col md:col-span-2">
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-white mb-2">Bot de WhatsApp con IA para Soporte al Cliente</h3>
+                            <p class="text-cyan-400 font-medium mb-4">Automatización con Python y APIs de IA</p>
+                            <p class="text-slate-400 leading-relaxed mb-6">
+                                Desarrollé un chatbot inteligente para WhatsApp que automatiza respuestas a preguntas frecuentes. Utilizando Node.js y la API de un LLM avanzado, el bot es capaz de entender y responder consultas en lenguaje natural, mejorando la eficiencia del servicio al cliente y reduciendo los tiempos de espera 24/7.
+                            </p>
+                             <div class="mt-auto flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm font-medium text-slate-500">Tecnologías:</span>
+                                    <!-- Node.js Icon -->
+                                    <svg class="w-8 h-8 text-[#68A063]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8Z m-1-12h2v8h-2v-8Zm-4 4h2v4H7v-4Z"/></svg>
+                                </div>
+                                <!-- GitHub Button -->
+                                <a href="https://github.com/yourusername/whatsapp-bot" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors duration-300">
+                                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">Ver código</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Experiencia en Marketing -->
+            <section id="case-studies" class="py-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Experiencia en Marketing Digital</h2>
+                <div class="space-y-16">
+
+                    <!-- Caso de Estudio 1: Instituto Atenea -->
+                    <div class="grid md:grid-cols-5 gap-8 items-center">
+                        <div class="md:col-span-2">
+                            <div class="p-4 bg-slate-800 rounded-lg">
+                                <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Instituto+Atenea" alt="Proyecto con Instituto Atenea" class="rounded-lg w-full">
+                            </div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <p class="text-sm font-semibold text-cyan-400 mb-1">Productor Audiovisual y Estratega de Contenidos</p>
+                            <h3 class="text-2xl font-bold text-white mb-3">Instituto Atenea</h3>
+                            <p class="text-slate-400 leading-relaxed">
+                                Lideré la estrategia de contenido audiovisual para posicionar al instituto a la vanguardia, impulsando la adopción de la IA en el perfil de los estudiantes a través de campañas innovadoras.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Caso de Estudio 2: Agencia Continental Group -->
+                    <div class="grid md:grid-cols-5 gap-8 items-center">
+                         <div class="md:col-span-3 md:order-last">
+                            <p class="text-sm font-semibold text-cyan-400 mb-1">Estratega de Marketing Digital</p>
+                            <h3 class="text-2xl font-bold text-white mb-3">Agencia Despachante de Aduanas Continental Group</h3>
+                            <p class="text-slate-400 leading-relaxed">
+                                Desarrollé una estrategia de "Marketing de Confianza" para clientes de alto valor, creando contenido transparente que fortaleció la seguridad del cliente en la gestión de grandes capitales.
+                            </p>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="p-4 bg-slate-800 rounded-lg">
+                                <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Continental+Group" alt="Proyecto con Continental Group" class="rounded-lg w-full">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caso de Estudio 3: Academia Albamar -->
+                    <div class="grid md:grid-cols-5 gap-8 items-center">
+                        <div class="md:col-span-2">
+                            <div class="p-4 bg-slate-800 rounded-lg">
+                               <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Academia+Albamar" alt="Proyecto con Academia Albamar" class="rounded-lg w-full">
+                            </div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <p class="text-sm font-semibold text-cyan-400 mb-1">Creador de Contenido y Estratega de Campañas</p>
+                            <h3 class="text-2xl font-bold text-white mb-3">Academia Albamar</h3>
+                            <p class="text-slate-400 leading-relaxed">
+                                Ideé y ejecuté una campaña de testimonios en video para TikTok que incrementó el engagement y generó una poderosa prueba social para atraer nuevos inscritos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Habilidades -->
+            <section id="skills" class="py-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Habilidades Clave</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Columna Tecnología & IA -->
+                    <div class="bg-slate-800 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold text-white mb-4">Tecnología & IA</h3>
+                        <ul class="space-y-3 text-slate-400">
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Python (Django)</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>HTML5, CSS3, JavaScript</li>
+                             <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>IA para Marketing (LLMs)</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>IA Generativa (Imagen/Video)</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <!-- Columna Marketing -->
+                    <div class="bg-slate-800 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold text-white mb-4">Marketing</h3>
+                        <ul class="space-y-3 text-slate-400">
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Marketing para Sector Educativo</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Estrategia de Contenidos</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Campañas de Testimonios</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Marketing B2B</li>
+                             <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Campañas en Meta Ads</li>
+                        </ul>
+                    </div>
+                    <!-- Columna Producción Audiovisual -->
+                    <div class="bg-slate-800 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold text-white mb-4">Producción Audiovisual</h3>
+                        <ul class="space-y-3 text-slate-400">
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Adobe Premiere Pro (Certificado)</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Adobe After Effects</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Adobe Photoshop & Illustrator</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Estrategia de Contenido Visual</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Contacto -->
+            <section id="contact" class="py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ponte en Contacto</h2>
+                <p class="max-w-xl mx-auto text-lg text-slate-400 mb-8">
+                    ¿Tienes un proyecto en mente o quieres hablar sobre una colaboración? No dudes en escribirme.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-lg">
+                    <a href="mailto:be.imagine.redo@gmail.com" class="bg-slate-800 py-3 px-6 rounded-lg hover:bg-slate-700 transition-colors duration-300">
+                        be.imagine.redo@gmail.com
+                    </a>
+                    <span class="text-slate-500 hidden sm:inline">|</span>
+                    <a href="tel:+59178780972" class="bg-slate-800 py-3 px-6 rounded-lg hover:bg-slate-700 transition-colors duration-300">
+                        +591 78780972
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 border-t border-slate-800">
+            <p class="text-slate-500">&copy; 2025 Beymar Chipana Lucana. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
