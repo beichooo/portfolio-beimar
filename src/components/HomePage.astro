@@ -19,108 +19,105 @@
         }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-300">
+<body class="bg-stone-100 text-stone-800">
 
     <!-- Contenedor Principal -->
     <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
 
         <!-- Header y Navegación -->
-        <header class="flex justify-between items-center py-8 sticky top-0 bg-slate-900/80 backdrop-blur-sm z-10">
-            <div class="text-2xl font-bold text-white">
+        <header class="flex justify-between items-center py-8 sticky top-0 bg-stone-100/80 backdrop-blur-sm z-10">
+            <div class="text-2xl font-bold text-stone-900">
                 <a href="#">BCL</a>
             </div>
             <nav class="hidden md:flex space-x-8 text-lg">
-                <a href="#projects" class="hover:text-cyan-400 transition-colors duration-300">Proyectos Tech</a>
-                <a href="#case-studies" class="hover:text-cyan-400 transition-colors duration-300">Experiencia Marketing</a>
-                <a href="#skills" class="hover:text-cyan-400 transition-colors duration-300">Habilidades</a>
-                <a href="#contact" class="hover:text-cyan-400 transition-colors duration-300">Contacto</a>
+                <a href="#projects" class="hover:text-emerald-600 transition-colors duration-300">Proyectos Tech</a>
+                <a href="#skills" class="hover:text-emerald-600 transition-colors duration-300">Habilidades</a>
+                <a href="#case-studies" class="hover:text-emerald-600 transition-colors duration-300">Marketing</a>
+                <a href="#contact" class="hover:text-emerald-600 transition-colors duration-300">Contacto</a>
             </nav>
         </header>
 
         <main>
             <!-- Sección Principal (Hero) -->
-            <section id="home" class="text-center py-20 md:py-32">
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
-                    Beymar Chipana Lucana
-                </h1>
-                <p class="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-cyan-400 to-teal-500 text-gradient mb-8">
-                    Desarrollador de Soluciones Digitales y Estratega de Marketing
-                </p>
-                <p class="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10">
-                    Construyo soluciones de software innovadoras y aplico mi conocimiento técnico para crear estrategias de marketing de alto impacto. Especialista en desarrollo web, automatización con IA y producción de contenido digital.
-                </p>
-                <a href="#contact" class="bg-cyan-500 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-cyan-400 transition-transform duration-300 inline-block transform hover:scale-105">
-                    Hablemos
-                </a>
+            <section id="home" class="py-20 md:py-32">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <!-- Columna de texto -->
+                    <div class="md:w-3/5 text-center md:text-left">
+                        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-stone-900 mb-4">
+                            Beymar Chipana Lucana
+                        </h1>
+                        <p class="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-emerald-500 to-green-600 text-gradient mb-8">
+                            Desarrollador y Estratega Digital
+                        </p>
+                        <p class="text-lg md:text-xl text-stone-600 mb-10">
+                            Construyo soluciones de software innovadoras y aplico mi conocimiento técnico para crear estrategias de marketing de alto impacto.
+                        </p>
+                        <a href="#contact" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-orange-600 transition-transform duration-300 inline-block transform hover:scale-105">
+                            Hablemos
+                        </a>
+                    </div>
+                    <!-- Columna de imagen -->
+                    <div class="md:w-2/5 flex justify-center md:justify-end">
+                        <!-- IMPORTANTE: Reemplaza 'src' con la ruta a tu imagen en la carpeta 'public' de tu proyecto Astro, por ejemplo '/photo-pro-cropped.jpg' -->
+                        <img src="./photo-pro-cropped 2.png" alt="Foto de Beymar Chipana" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl border-8 border-white">
+                    </div>
+                </div>
             </section>
 
             <!-- Proyectos de Desarrollo e IA -->
             <section id="projects" class="py-20">
-                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Proyectos de Desarrollo e IA</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-stone-900 mb-12">Proyectos de Desarrollo e IA</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Proyecto PASY -->
-                    <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md flex flex-col">
                         <div class="p-8 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold text-white mb-2">PASY - Plataforma de Adopción de Mascotas</h3>
-                            <p class="text-cyan-400 font-medium mb-4">Desarrollo Full-Stack con Python (Django)</p>
-                            <p class="text-slate-400 leading-relaxed mb-6">
-                                Lideré el desarrollo del frontend y colaboré activamente en el backend para crear una plataforma web completa. Diseñé e implementé la interfaz de usuario con HTML y CSS, asegurando una experiencia intuitiva. El proyecto, presentado como una iniciativa de tecnología cívica, demuestra mi capacidad para llevar un producto desde la concepción hasta el despliegue.
+                            <h3 class="text-2xl font-bold text-stone-900 mb-2">PASY - Plataforma de Adopción de Mascotas</h3>
+                            <p class="text-emerald-600 font-medium mb-4">Desarrollo Full-Stack con Python (Django)</p>
+                            <p class="text-stone-600 leading-relaxed mb-6">
+                                Co-desarrollé una plataforma web completa para conectar albergues de animales con adoptantes, manejando tanto el frontend como el backend.
                             </p>
                             <div class="mt-auto flex items-center justify-between">
-                                <div class="flex items-center space-x-4">
-                                    <span class="text-sm font-medium text-slate-500">Tecnologías:</span>
-                                    <!-- Python Icon -->
-                                    <svg class="w-8 h-8 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 2.33c-2.26.1-4.22.99-5.73 2.49-.63.63-1.15 1.36-1.58 2.16-.06.12-.1.25-.13.38-.28 1.16-.3 2.37-.02 3.52.41 1.66 1.41 3.1 2.8 4.14 1.1.82 2.4 1.35 3.77 1.61.13.02.26.04.38.07.4.08.79.14 1.18.17 1.18.1 2.38-.04 3.52-.42 1.67-.57 3.12-1.57 4.14-2.88 1.25-1.63 1.88-3.6 1.83-5.58-.08-3.08-1.63-5.8-4.08-7.39-1.22-.8-2.6-1.28-4.04-1.42-.1-.01-.2 0-.3-.01Zm-4.8 4.79c.53-.53 1.13-.94 1.79-1.25.9-.42 1.9-.62 2.92-.58.78.03 1.55.2 2.29.5.95.38 1.82.95 2.53 1.66.52.52.95 1.1 1.28 1.74.45.86.7 1.8.7 2.76 0 .78-.13 1.55-.4 2.29-.39.98-1 1.86-1.74 2.6-.54.55-1.16 1-1.82 1.35-.88.42-1.84.64-2.8.6-.78-.03-1.55-.2-2.29-.5-.95-.38-1.82-.95-2.53-1.66-.52-.52-.95-1.1-1.28-1.74-.45-.86-.7-1.8-.7-2.76 0-.8.14-1.58.42-2.32.38-.97 1-1.85 1.72-2.58Z M9.58 21.67c2.26-.1 4.22-.99 5.73-2.49.63-.63 1.15-1.36 1.58-2.16.06-.12.1-.25.13-.38.28-1.16.3-2.37.02-3.52-.41-1.66-1.41-3.1-2.8-4.14-1.1-.82-2.4-1.35-3.77-1.61-.13-.02-.26-.04-.38-.07-.4-.08-.79-.14-1.18-.17-1.18-.1-2.38.04-3.52.42-1.67.57-3.12-1.57-4.14-2.88-1.25-1.63-1.88-3.6-1.83-5.58.08-3.08 1.63-5.8 4.08-7.39 1.22-.8 2.6-1.28 4.04-1.42.1-.01.2 0 .3-.01Zm4.8-4.79c-.53.53-1.13.94-1.79 1.25-.9.42-1.9.62-2.92.58-.78-.03-1.55-.2-2.29-.5-.95-.38-1.82-.95-2.53-1.66-.52-.52-.95-1.1-1.28-1.74-.45-.86-.7-1.8-.7-2.76 0-.78.13-1.55.4-2.29.39-.98 1-1.86 1.74-2.6.54-.55 1.16-1 1.82-1.35.88-.42 1.84-.64 2.8-.6.78.03 1.55.2 2.29.5.95.38 1.82.95 2.53 1.66.52.52.95 1.1 1.28 1.74.45.86.7 1.8.7 2.76 0 .8-.14 1.58-.42 2.32-.38-.97 1-1.85 1.72-2.58Z" /></svg>
-                                    <!-- Django Icon -->
-                                    <svg class="w-7 h-7 text-[#092E20]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M1.61 22.39h4.44V6.91H1.61v15.48ZM22.39 12.02c0 5.48-3.92 8.3-9.52 8.3a12.83 12.83 0 0 1-4.04-.64v-3.79c1.11.43 2.43.64 3.96.64 3.63 0 5.37-1.5 5.37-4.51V1.61H22.4v10.41Z" /></svg>
+                                <div class="flex items-center space-x-3">
+                                    <svg class="w-8 h-8 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.42 2.33c-2.26.1-4.22.99-5.73 2.49-.63.63-1.15 1.36-1.58 2.16-.06.12-.1.25-.13.38-.28 1.16-.3 2.37-.02 3.52.41 1.66 1.41 3.1 2.8 4.14 1.1.82 2.4 1.35 3.77 1.61.13.02.26.04.38.07.4.08.79.14 1.18.17 1.18.1 2.38-.04 3.52-.42 1.67-.57 3.12-1.57 4.14-2.88 1.25-1.63 1.88-3.6 1.83-5.58-.08-3.08-1.63-5.8-4.08-7.39-1.22-.8-2.6-1.28-4.04-1.42-.1-.01-.2 0-.3-.01Zm-4.8 4.79c.53-.53 1.13-.94 1.79-1.25.9-.42 1.9-.62 2.92-.58.78.03 1.55.2 2.29.5.95.38 1.82.95 2.53 1.66.52.52.95 1.1 1.28 1.74.45.86.7 1.8.7 2.76 0 .78-.13 1.55-.4 2.29-.39.98-1 1.86-1.74 2.6-.54.55-1.16 1-1.82 1.35-.88.42-1.84.64-2.8.6-.78-.03-1.55-.2-2.29-.5-.95-.38-1.82-.95-2.53-1.66-.52-.52-.95-1.1-1.28-1.74-.45-.86-.7-1.8-.7-2.76 0-.8.14-1.58.42-2.32.38-.97 1-1.85 1.72-2.58Z M9.58 21.67c2.26-.1 4.22-.99 5.73-2.49.63-.63 1.15-1.36 1.58-2.16.06-.12.1-.25.13-.38.28 1.16.3-2.37.02-3.52-.41-1.66-1.41-3.1-2.8-4.14-1.1-.82-2.4-1.35-3.77-1.61-.13-.02-.26-.04-.38-.07-.4-.08-.79-.14-1.18-.17-1.18-.1-2.38.04-3.52.42-1.67-.57-3.12-1.57-4.14-2.88-1.25-1.63-1.88-3.6-1.83-5.58.08-3.08 1.63-5.8 4.08-7.39 1.22-.8 2.6-1.28 4.04-1.42.1-.01.2 0 .3-.01Zm4.8-4.79c-.53.53-1.13.94-1.79 1.25-.9.42-1.9.62-2.92.58-.78-.03-1.55-.2-2.29-.5-.95-.38-1.82-.95-2.53-1.66-.52-.52-.95-1.1-1.28-1.74-.45-.86-.7-1.8-.7-2.76 0-.78.13-1.55.4-2.29.39-.98 1-1.86 1.74-2.6.54-.55 1.16-1 1.82-1.35.88-.42 1.84-.64 2.8-.6.78.03 1.55.2 2.29.5.95.38 1.82.95 2.53 1.66.52.52.95 1.1 1.28 1.74.45.86.7 1.8.7 2.76 0 .8-.14 1.58-.42 2.32-.38-.97 1-1.85 1.72-2.58Z" /></svg>
+                                    <svg class="w-7 h-7 text-[#092E20]" viewBox="0 0 24 24" fill="currentColor"><path d="M1.61 22.39h4.44V6.91H1.61v15.48ZM22.39 12.02c0 5.48-3.92 8.3-9.52 8.3a12.83 12.83 0 0 1-4.04-.64v-3.79c1.11.43 2.43.64 3.96.64 3.63 0 5.37-1.5 5.37-4.51V1.61H22.4v10.41Z" /></svg>
                                 </div>
-                                <!-- GitHub Button -->
-                                <a href="https://github.com/yourusername/pasy-project" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors duration-300">
-                                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                    <span class="text-sm font-medium">Ver código</span>
+                                <a href="https://github.com/beichooo/pasy-mascotas-project.git" class="bg-stone-200 text-stone-700 font-semibold py-2 px-4 rounded-lg text-sm hover:bg-stone-300 transition-colors duration-300 inline-flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                                    Ver Código
                                 </a>
                             </div>
                         </div>
                     </div>
                      <!-- Proyecto Generador de Descripciones -->
-
-                    <!-- <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md flex flex-col">
                         <div class="p-8 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold text-white mb-2">Generador de Descripciones para Redes Sociales</h3>
-                            <p class="text-cyan-400 font-medium mb-4">Herramienta Web con IA Generativa</p>
-                            <p class="text-slate-400 leading-relaxed mb-6">
-                                Creé una aplicación web que genera automáticamente descripciones, hashtags y copys optimizados para videos. Ingresando una transcripción, la herramienta usa un LLM para producir contenido listo para publicar en TikTok e Instagram, agilizando drásticamente el flujo de trabajo de creadores de contenido.
+                            <h3 class="text-2xl font-bold text-stone-900 mb-2">Generador de Descripciones para Redes Sociales</h3>
+                            <p class="text-emerald-600 font-medium mb-4">Herramienta Web con IA Generativa</p>
+                            <p class="text-stone-600 leading-relaxed mb-6">
+                                Creé una app que genera copys y hashtags para videos a partir de una transcripción, optimizando el flujo de trabajo de creadores de contenido.
                             </p>
-                             <div class="mt-auto flex items-center space-x-4">
-                                <span class="text-sm font-medium text-slate-500">Tecnologías:</span>
-
-                                <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2Zm4.293 6.293-1.66 1.092a.5.5 0 0 1-.663-.092L12 6.5l-1.97 2.793a.5.5 0 0 1-.663.092l-1.66-1.092L12 3l4.293 5.293ZM7.5 17a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-2Zm9-5.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-2Z"/></svg>
+                            <div class="mt-auto flex items-center justify-between">
+                                <svg class="w-8 h-8 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2Zm4.293 6.293-1.66 1.092a.5.5 0 0 1-.663-.092L12 6.5l-1.97 2.793a.5.5 0 0 1-.663.092l-1.66-1.092L12 3l4.293 5.293ZM7.5 17a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-2Zm9-5.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-2Z"/></svg>
+                                <a href="#" class="bg-stone-200 text-stone-700 font-semibold py-2 px-4 rounded-lg text-sm hover:bg-stone-300 transition-colors duration-300 inline-flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                                    Ver Código
+                                </a>
                             </div>
                         </div>
-                    </div> -->
-                    
+                    </div>
                      <!-- Proyecto WhatsApp Bot -->
-                    <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg flex flex-col md:col-span-2">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md flex flex-col md:col-span-2">
                         <div class="p-8 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold text-white mb-2">Bot de WhatsApp con IA para Soporte al Cliente</h3>
-                            <p class="text-cyan-400 font-medium mb-4">Automatización con Python y APIs de IA</p>
-                            <p class="text-slate-400 leading-relaxed mb-6">
-                                Desarrollé un chatbot inteligente para WhatsApp que automatiza respuestas a preguntas frecuentes. Utilizando Node.js y la API de un LLM avanzado, el bot es capaz de entender y responder consultas en lenguaje natural, mejorando la eficiencia del servicio al cliente y reduciendo los tiempos de espera 24/7.
+                            <h3 class="text-2xl font-bold text-stone-900 mb-2">Bot de WhatsApp con IA para Soporte al Cliente</h3>
+                            <p class="text-emerald-600 font-medium mb-4">Automatización con Node.js</p>
+                            <p class="text-stone-600 leading-relaxed mb-6">
+                                Desarrollé un chatbot para WhatsApp con un LLM para automatizar respuestas a preguntas frecuentes y mejorar la eficiencia del servicio al cliente 24/7.
                             </p>
-                             <div class="mt-auto flex items-center justify-between">
-                                <div class="flex items-center space-x-4">
-                                    <span class="text-sm font-medium text-slate-500">Tecnologías:</span>
-                                    <!-- Node.js Icon -->
-                                    <svg class="w-8 h-8 text-[#68A063]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8Z m-1-12h2v8h-2v-8Zm-4 4h2v4H7v-4Z"/></svg>
-                                </div>
-                                <!-- GitHub Button -->
-                                <a href="https://github.com/yourusername/whatsapp-bot" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors duration-300">
-                                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                    <span class="text-sm font-medium">Ver código</span>
+                            <div class="mt-auto flex items-center justify-between">
+                                <svg class="w-8 h-8 text-[#68A063]" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8Z m-1-12h2v8h-2v-8Zm-4 4h2v4H7v-4Z"/></svg>
+                                <a href="https://github.com/beichooo/bot-whatsapp-v4.git" class="bg-stone-200 text-stone-700 font-semibold py-2 px-4 rounded-lg text-sm hover:bg-stone-300 transition-colors duration-300 inline-flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                                    Ver Código
                                 </a>
                             </div>
                         </div>
@@ -128,112 +125,74 @@
                 </div>
             </section>
             
-            <!-- Sección de Experiencia en Marketing -->
-            <section id="case-studies" class="py-20">
-                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Experiencia en Marketing Digital</h2>
-                <div class="space-y-16">
-
-                    <!-- Caso de Estudio 1: Instituto Atenea -->
-                    <div class="grid md:grid-cols-5 gap-8 items-center">
-                        <div class="md:col-span-2">
-                            <div class="p-4 bg-slate-800 rounded-lg">
-                                <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Instituto+Atenea" alt="Proyecto con Instituto Atenea" class="rounded-lg w-full">
-                            </div>
-                        </div>
-                        <div class="md:col-span-3">
-                            <p class="text-sm font-semibold text-cyan-400 mb-1">Productor Audiovisual y Estratega de Contenidos</p>
-                            <h3 class="text-2xl font-bold text-white mb-3">Instituto Atenea</h3>
-                            <p class="text-slate-400 leading-relaxed">
-                                Lideré la estrategia de contenido audiovisual para posicionar al instituto a la vanguardia, impulsando la adopción de la IA en el perfil de los estudiantes a través de campañas innovadoras.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Caso de Estudio 2: Agencia Continental Group -->
-                    <div class="grid md:grid-cols-5 gap-8 items-center">
-                         <div class="md:col-span-3 md:order-last">
-                            <p class="text-sm font-semibold text-cyan-400 mb-1">Estratega de Marketing Digital</p>
-                            <h3 class="text-2xl font-bold text-white mb-3">Agencia Despachante de Aduanas Continental Group</h3>
-                            <p class="text-slate-400 leading-relaxed">
-                                Desarrollé una estrategia de "Marketing de Confianza" para clientes de alto valor, creando contenido transparente que fortaleció la seguridad del cliente en la gestión de grandes capitales.
-                            </p>
-                        </div>
-                        <div class="md:col-span-2">
-                            <div class="p-4 bg-slate-800 rounded-lg">
-                                <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Continental+Group" alt="Proyecto con Continental Group" class="rounded-lg w-full">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Caso de Estudio 3: Academia Albamar -->
-                    <div class="grid md:grid-cols-5 gap-8 items-center">
-                        <div class="md:col-span-2">
-                            <div class="p-4 bg-slate-800 rounded-lg">
-                               <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Academia+Albamar" alt="Proyecto con Academia Albamar" class="rounded-lg w-full">
-                            </div>
-                        </div>
-                        <div class="md:col-span-3">
-                            <p class="text-sm font-semibold text-cyan-400 mb-1">Creador de Contenido y Estratega de Campañas</p>
-                            <h3 class="text-2xl font-bold text-white mb-3">Academia Albamar</h3>
-                            <p class="text-slate-400 leading-relaxed">
-                                Ideé y ejecuté una campaña de testimonios en video para TikTok que incrementó el engagement y generó una poderosa prueba social para atraer nuevos inscritos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- Sección de Habilidades -->
             <section id="skills" class="py-20">
-                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Habilidades Clave</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-stone-900 mb-12">Habilidades Clave</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Columna Tecnología & IA -->
-                    <div class="bg-slate-800 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold text-white mb-4">Tecnología & IA</h3>
-                        <ul class="space-y-3 text-slate-400">
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Python (Django)</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>HTML5, CSS3, JavaScript</li>
-                             <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>IA para Marketing (LLMs)</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>IA Generativa (Imagen/Video)</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Git & GitHub</li>
+                    <div class="bg-white p-8 rounded-lg shadow-md md:col-span-2">
+                        <h3 class="text-2xl font-bold text-stone-900 mb-4">Tecnología & IA</h3>
+                        <ul class="grid grid-cols-2 gap-3 text-stone-600">
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Python (Django)</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Node.js</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>JavaScript (Astro)</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>HTML5 & CSS3</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>IA Generativa (LLMs)</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Git & GitHub</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Vibe Coding</li>
                         </ul>
                     </div>
-                    <!-- Columna Marketing -->
-                    <div class="bg-slate-800 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold text-white mb-4">Marketing</h3>
-                        <ul class="space-y-3 text-slate-400">
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Marketing para Sector Educativo</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Estrategia de Contenidos</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Campañas de Testimonios</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Marketing B2B</li>
-                             <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Campañas en Meta Ads</li>
-                        </ul>
-                    </div>
-                    <!-- Columna Producción Audiovisual -->
-                    <div class="bg-slate-800 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold text-white mb-4">Producción Audiovisual</h3>
-                        <ul class="space-y-3 text-slate-400">
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Adobe Premiere Pro (Certificado)</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Adobe After Effects</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Adobe Photoshop & Illustrator</li>
-                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Estrategia de Contenido Visual</li>
+                    <!-- Columna Marketing y Producción -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-stone-900 mb-4">Marketing y Producción</h3>
+                        <ul class="space-y-3 text-stone-600">
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Estrategia de Contenidos</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Marketing para Sector Educativo</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Adobe Premiere Pro (Cert.)</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Producción Audiovisual</li>
                         </ul>
                     </div>
                 </div>
             </section>
+            
+             <!-- Sección de Experiencia en Marketing (Resumida) -->
+            <section id="case-studies" class="py-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-stone-900 mb-12">Experiencia en Marketing</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <!-- Trabajo 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-stone-900">Productor Audiovisual y Estratega de Contenidos</h3>
+                        <p class="text-emerald-600 font-semibold mb-2">Instituto Atenea</p>
+                        <p class="text-stone-600">Lideré la estrategia de contenido para posicionar al instituto a la vanguardia, impulsando la adopción de IA en el perfil de los estudiantes.</p>
+                    </div>
+                    <!-- Trabajo 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-stone-900">Estratega de Marketing Digital</h3>
+                        <p class="text-emerald-600 font-semibold mb-2">Agencia Despachante de Aduanas Continental Group</p>
+                        <p class="text-stone-600">Desarrollé una estrategia de "Marketing de Confianza" creando contenido transparente que fortaleció la seguridad del cliente.</p>
+                    </div>
+                    <!-- Trabajo 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-stone-900">Creador de Contenido y Estratega de Campañas</h3>
+                        <p class="text-emerald-600 font-semibold mb-2">Academia Albamar</p>
+                        <p class="text-stone-600">Ejecuté una campaña de testimonios en video para TikTok que incrementó significativamente el engagement y la inscripción de nuevos alumnos.</p>
+                    </div>
+                </div>
+            </section>
+
 
             <!-- Sección de Contacto -->
             <section id="contact" class="py-20 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ponte en Contacto</h2>
-                <p class="max-w-xl mx-auto text-lg text-slate-400 mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-4">Ponte en Contacto</h2>
+                <p class="max-w-xl mx-auto text-lg text-stone-600 mb-8">
                     ¿Tienes un proyecto en mente o quieres hablar sobre una colaboración? No dudes en escribirme.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-lg">
-                    <a href="mailto:be.imagine.redo@gmail.com" class="bg-slate-800 py-3 px-6 rounded-lg hover:bg-slate-700 transition-colors duration-300">
+                    <a href="mailto:be.imagine.redo@gmail.com" class="bg-stone-200 py-3 px-6 rounded-lg hover:bg-stone-300 transition-colors duration-300">
                         be.imagine.redo@gmail.com
                     </a>
-                    <span class="text-slate-500 hidden sm:inline">|</span>
-                    <a href="tel:+59178780972" class="bg-slate-800 py-3 px-6 rounded-lg hover:bg-slate-700 transition-colors duration-300">
+                    <span class="text-stone-400 hidden sm:inline">|</span>
+                    <a href="tel:+59178780972" class="bg-stone-200 py-3 px-6 rounded-lg hover:bg-stone-300 transition-colors duration-300">
                         +591 78780972
                     </a>
                 </div>
@@ -241,8 +200,8 @@
         </main>
 
         <!-- Footer -->
-        <footer class="text-center py-8 border-t border-slate-800">
-            <p class="text-slate-500">&copy; 2025 Beymar Chipana Lucana. Todos los derechos reservados.</p>
+        <footer class="text-center py-8 border-t border-stone-200">
+            <p class="text-stone-500">&copy; 2025 Beymar Chipana Lucana. Todos los derechos reservados.</p>
         </footer>
 
     </div>
